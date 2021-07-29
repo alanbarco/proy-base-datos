@@ -1,6 +1,3 @@
--- Creacion base de datos
-CREATE SCHEMA G9P1_contador_personas;
-
 -- Creación de la tabla Aforo
 
 CREATE TABLE IF NOT EXISTS Aforo(
@@ -13,14 +10,17 @@ CREATE TABLE IF NOT EXISTS Aforo(
 
 -- Creación de la tabla Tienda
 
-CREATE TABLE IF NOT EXISTS Tienda(
+CREATE TABLE Tienda(
 	ID_tienda INT NOT NULL,
     nombre VARCHAR(45) DEFAULT NULL,
     numero_local INT DEFAULT NULL,
     tipo VARCHAR(45) DEFAULT NULL,
     numero_piso INT DEFAULT NULL,
-    PRIMARY KEY(ID_tienda)
+    ID_aforo INT NOT NULL,
+    PRIMARY KEY(ID_tienda) ,
+    FOREIGN KEY (ID_aforo) REFERENCES Aforo(ID_aforo)
 );
+
 
 
 
@@ -51,8 +51,7 @@ CREATE TABLE IF NOT EXISTS Empleado(
     ID_direccion INT,
     ID_empleado2 INT,
     FOREIGN KEY(ID_tienda) REFERENCES Tienda(ID_tienda),
-    FOREIGN KEY(ID_direccion) REFERENCES Direccion_domiciliaria(ID_direccion),
-    FOREIGN KEY(ID_empleado2) REFERENCES Empleado(ID_Empleado)
+    FOREIGN KEY(ID_direccion) REFERENCES Direccion_domiciliaria(ID_direccion)
 );
 
 
@@ -61,6 +60,7 @@ CREATE TABLE IF NOT EXISTS Empleado(
 
 CREATE TABLE IF NOT EXISTS Telefono(
 	ID_telefono INT PRIMARY KEY AUTO_INCREMENT,
+	numero VARCHAR(20) NOT NULL,
     ID_empleado INT NOT NULL,
     FOREIGN KEY (ID_empleado) REFERENCES Empleado(ID_empleado)
 );

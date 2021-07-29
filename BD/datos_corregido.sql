@@ -77,27 +77,31 @@ insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,c
 
 -- Tabla Empleado
 
-insert into Empleado_cargo(cargo,ID_empleado) values("Manager",9);
-insert into Empleado_cargo(cargo,ID_empleado) values('Manager',10);
-insert into Empleado_cargo(cargo,ID_empleado) values('Manager',11);
-insert into Empleado_cargo(cargo,ID_empleado) values('Manager',12);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',13);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',15);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',16);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',17);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',18);
-insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',19);
-insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',20);
-insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',21);
-insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',22);
-insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',23);
-insert into Empleado_cargo(cargo,ID_empleado) values('Atencion al cliente',24);
-insert into Empleado_cargo(cargo,ID_empleado) values('Atencion al cliente',25);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',29);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',30);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',31);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',32);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',33);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0987654321', "Alan", "Barco", '2001-06-20', "alanbarco@hotmail.com", 'H',1 ,1,null);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0845321684', "Carlos", "Perez", '1965-01-23', "carlos@gmail.com", 'H',2 ,3,null);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0590169532', "Roberto", "Gonzalez", '1982-01-08', "robgon@gmail.com", 'H',1 ,3,null);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0763880783', "Maria", "Cevallos", '2000-05-16', "marcev@hotmail.com", 'M',2 ,4,null);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0494167753', "Rigoberto", "Mendoza", '1960-05-04', "rigo@hotmail.com", 'H',3 ,7,null);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0959717129', "Luisa", "Carchi", '1996-02-13', "luisa@gmail.com", 'M', 3,8,9);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0891110623', "Bob", "Mawson", '1974-02-19', "bobmw@gmail.com", 'H', 4,5,9);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0835239597', "Ana", "Arreaga", '2000-05-17', "aareaga@gmail.com", 'M', 5,4,9);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0611674242', "Luis", "Bravo", '1996-06-21', "luisbra@hotmail.com", 'H', 6,8,10);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0776133098', "Edward", "Cambo", '1999-06-23', "edw@gmail.com", 'H', 7,9,10);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0114739205', "Laura", "Torres", '1998-02-09', "lauto@gmail.com", 'M', 10,4,10);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0865082799', "Marcelo", "Chamba", '1984-11-25', "marcecha@gmail.com", 'H', 12,1,11);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0486481050', "Luis", "Asanza", '2001-09-08', "luisa@gmail.com", 'H', 1,12,11);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0350822324', "Martin", "Perez", '1992-05-01', "martinp@gmail.com", 'H', 5,12,11);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0523627271', "Walter", "Gonzalez", '1996-10-23', "waltergon@gmail.com", 'H', 2,12,12);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0475092276', "Domenica", "Quintana", '1985-02-18', "domequin@gmail.com", 'M',4 ,1,13);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0533021114', "Luis", "Tobar", '1974-08-02', "luisto@gmail.com", 'H', 8,1,12);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0233131058', "Carlos", "Vera", '1992-06-20', "carlosver@hotmail.com", 'H', 20,1,9);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0751730449', "Rebeca", "Fernandez", '1999-02-23', "rebefer@gmail.com", 'M',18 ,1,10);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0851730432', "Carlos", "Gortaire", '2001-05-26', "cgortaire@hotmail.com", 'H',1 ,20,10);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0951712481', "Roberto", "Mantilla", '1995-10-18', "robman@gmail.com", 'H',2 ,19,9);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0758930420', "Tabata", "Palmer", '1985-06-23', "tabpal@hotmail.com", 'M',1 ,10,11);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0851730456', "Mayerly", "Avellan", '1999-02-16', "mayave@gmail.com", 'M',2 ,10,12);
+insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0951730421', "Paula", "Idrovo", '2001-02-10', "paulaidr@hotmail.com", 'M',1 ,13,9);
+
 
 
 
@@ -119,11 +123,11 @@ insert into Telefono(numero, ID_empleado) values('0948118304',21);
 insert into Telefono(numero, ID_empleado) values('0968791187',22);
 insert into Telefono(numero, ID_empleado) values('0956626525',23);
 insert into Telefono(numero, ID_empleado) values('0975143685',24);
-insert into Telefono(numero, ID_empleado) values('0928919190',29);
-insert into Telefono(numero, ID_empleado) values('0996908527',30);
-insert into Telefono(numero, ID_empleado) values('0931672831',31);
-insert into Telefono(numero, ID_empleado) values('0994103733',32);
-insert into Telefono(numero, ID_empleado) values('0987253128',33);
+insert into Telefono(numero, ID_empleado) values('0928919190',1);
+insert into Telefono(numero, ID_empleado) values('0996908527',2);
+insert into Telefono(numero, ID_empleado) values('0931672831',3);
+insert into Telefono(numero, ID_empleado) values('0994103733',5);
+insert into Telefono(numero, ID_empleado) values('0987253128',4);
 
 
 
@@ -138,7 +142,7 @@ INSERT INTO Usuario VALUES ("0921738605","William","Shakespeare","williamshakesp
 INSERT INTO Usuario VALUES ("0571034689","Cristóbal","Colón","cristobalcolon@gmail.com","1964-01-03","Viudo","Navegante","M",12,5);
 INSERT INTO Usuario VALUES ("0215869743","Isaac","Newton","isaacnewton@gmail.com","1998-12-07","Soltero","Matemático","M",15,7);
 INSERT INTO Usuario VALUES ("0192437856","Louis","Pasteur","louispasteur@gmail.com","1927-10-09","Casado","Químico","M",5,18);
-INSERT INTO Usuario VALUES ("0875269130","Karl","Marx","karlmarx@gmail.com","1988-02-27","Divorciado","Navegante","M",17,6);
+INSERT INTO Usuario VALUES ("0875269130","Karl","Marx","karlmarx@gmail.com","1988-02-27","Divorciado","Navegante","M",18,6);
 INSERT INTO Usuario VALUES ("0568374219","Adolf","Hitler","adolfhitler@gmail.com","1930-08-15","Viudo","Político","M",19,4);
 INSERT INTO Usuario VALUES ("0258716394","Bill","Gates","billgates@gmail.com","1955-05-11","Casado","Científico","M",12,11);
 INSERT INTO Usuario VALUES ("0941850327","Nikola","Tesla","nikolatesla@gmail.com","1976-02-13","Divorciado","Matemático","M",5,3);
@@ -147,7 +151,7 @@ INSERT INTO Usuario VALUES ("0361407592","Manuela","Sáenz","manuelasaenz@gmail.
 INSERT INTO Usuario VALUES ("0278634015","Margaret","Thatcher","margaretthatcher@gmail.com","2005-09-29","Divorciado","Militar","F",3,19);
 INSERT INTO Usuario VALUES ("0123780456","Katherine","Johnson","katherinejohnson@gmail.com","2008-12-22","Soltero","Matemático","F",14,12);
 INSERT INTO Usuario VALUES ("0983645712","Malala","Yousafzai","malalayousafzai@gmail.com","2012-05-11","Casado","Químico","F",11,17);
-INSERT INTO Usuario VALUES ("0412573869","Ada","Lovelace","adalovelace@gmail.com","2017-09-23","Divorciado","Navegante","F",17,1);
+INSERT INTO Usuario VALUES ("0412573869","Ada","Lovelace","adalovelace@gmail.com","2017-09-23","Divorciado","Navegante","F",19,1);
 INSERT INTO Usuario VALUES ("0643701258","Coco","Chanel","cocochanel@gmail.com","1973-08-14","Viudo","Matemático","F",13,12);
 
 
@@ -280,12 +284,12 @@ insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',21);
 insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',22);
 insert into Empleado_cargo(cargo,ID_empleado) values('RRHH',23);
 insert into Empleado_cargo(cargo,ID_empleado) values('Atencion al cliente',24);
-insert into Empleado_cargo(cargo,ID_empleado) values('Atencion al cliente',25);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',29);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',30);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',31);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',32);
-insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',33);
+insert into Empleado_cargo(cargo,ID_empleado) values('Atencion al cliente',20);
+insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',21);
+insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',3);
+insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',7);
+insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',8);
+insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',6);
 
 
 
@@ -307,9 +311,9 @@ insert into Sueldo_cargo(sueldo,ID_empleado) values('900',21);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('900',22);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('900',23);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('600',24);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('600',25);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',29);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',30);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',31);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',32);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',33);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('600',2);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('500',3);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('500',4);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('500',5);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('500',6);
+insert into Sueldo_cargo(sueldo,ID_empleado) values('500',7);
