@@ -16,6 +16,7 @@ begin
 	insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2)  values(cedula,nombres,apellidos,fecha_nac,correo,sexo,id_tienda,id_direccion,id_empleado2);
 END //
 DELIMITER ;    
+call insertar_empleado('0951701421', "Maria", "Rodriguez", '1995-02-10', "vcvsd@hotmail.com", 'M',36 ,13,9);
 -- Procedimiento para actualizar empleado
 DROP PROCEDURE IF EXISTS update_empleado;
 DELIMITER //
@@ -47,7 +48,7 @@ begin
     ID_empleado = id;
 END //
 DELIMITER ;  
-
+call update_empleado(21,'0951701421', "Maria", "Rodriguez", '1995-02-10', "vcvsd@hotmail.com", 'M',36 ,13,9);
 -- Procedimiento para eliminar empleado
 DROP PROCEDURE IF EXISTS delete_empleadoPorID;
 DELIMITER //
@@ -58,7 +59,7 @@ begin
 	delete from Empleado where ID_emplado = id;
 END //
 DELIMITER ;  
-
+call delete_empleadoPorID(21);
 -- Procedimiento para ingresar Direccion domiciliaria
 DROP PROCEDURE IF EXISTS ingresar_direccion;
 DELIMITER //
@@ -73,6 +74,7 @@ begin
 	insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,canton,provincia) values(calle_prim,calle_sec,numeracion,canton,provincia);
 END //
 DELIMITER ;  
+call ingresar_direccion('Av 12', 'Calle asdasd', 144, 'Guayaquil', 'Guayas');
 
 -- Procedimiento para actualizar Direccion domiciliaria
 DROP PROCEDURE IF EXISTS update_direccion;
@@ -97,6 +99,7 @@ begin
 	ID_direccion = id;
 END //
 DELIMITER ;  
+call update_direccion(10,'Av 12', 'Calle asdasd', 144, 'Guayaquil', 'Guayas');
  -- Procedimiento para eliminar Direccion domiciliaria por ID
  DROP PROCEDURE IF EXISTS eliminar_direccion;
 DELIMITER //
@@ -107,7 +110,7 @@ begin
 	delete from Direccion_domiciliaria where ID_direccion = id;
 END //
 DELIMITER ;  
-
+call eliminar_direccion(10);
 -- Procedimiento Ingresar Tienda
 DROP PROCEDURE IF EXISTS ingresar_tienda;
 DELIMITER //
@@ -123,7 +126,7 @@ begin
 	insert into Tienda values(id,nombre,numero_local,tipo,numero_piso,ID_aforo);
 END //
 DELIMITER ;  
-
+call ingresar_tienda(21,  'Tienda 21', 21, 'Comida', 1,21 );
 -- Procedimiento Actualizar Tienda
 DROP PROCEDURE IF EXISTS update_tienda;
 DELIMITER //
@@ -147,7 +150,7 @@ begin
     ID_tienda = id;
 END //
 DELIMITER ;  
-
+call update_tienda(12,21,  'Tienda 21', 21, 'Comida', 1,21 );
 -- Procedimiento para eliminar datos de Tienda
 DROP PROCEDURE IF EXISTS delete_tienda;
 DELIMITER //
@@ -158,7 +161,7 @@ begin
 	delete from Tienda where ID_tienda = id;
 END //
 DELIMITER ;  
-
+call delete_tienda(12);
 -- Proceso de ingresar telefono
 DROP PROCEDURE IF EXISTS ingresar_Telefono;
 DELIMITER //
@@ -170,7 +173,7 @@ begin
 	insert into Telefono(numero, ID_empleado) values(id_emp, numero);
 END //
 DELIMITER ;  
-
+call ingresar_Telefono('0987753128',45);
 -- Procedimiento para actualizar telefono
 DROP PROCEDURE IF EXISTS update_Telefono;
 DELIMITER //
@@ -188,13 +191,12 @@ begin
 	ID_telefono = id;
 END //
 DELIMITER ;  
+call update_Telefono(9,'0987753128',45);
 -- Procedimiento para eliminar Telefono
-DROP PROCEDURE IF EXISTS update_Telefono;
+DROP PROCEDURE IF EXISTS eliminar_telefono;
 DELIMITER //
-CREATE PROCEDURE update_Telefono(
-in id int,
-in id_emp int,
-in numero varchar(10)
+CREATE PROCEDURE eliminar_telefono(
+in id int
 )
 begin
 	delete from Telefono
@@ -202,6 +204,7 @@ begin
 	ID_telefono = id;
 END //
 DELIMITER ;  
+call eliminar_telefono(9);
 -- Procedimiento para insertar Empleado_cargo
 DROP PROCEDURE IF EXISTS ingresar_Empleado_Cargo;
 DELIMITER //
@@ -213,7 +216,7 @@ begin
 	insert into Empleado_cargo(cargo,ID_empleado) values(cargo, id_emp);
 END //
 DELIMITER ;  
-
+call ingresar_Empleado_Cargo('RRHH',43);
 -- Procedimiento para actualizar Empleado_Cargo
 DROP PROCEDURE IF EXISTS update_Empleado_Cargo;
 DELIMITER //
@@ -231,7 +234,7 @@ begin
     ID_empleado_cargo = id;
 END //
 DELIMITER ;  
-
+call update_Empleado_Cargo(2,'RRHH',43);
 -- Procedimiento para eliminar Empleado_Cargo
 DROP PROCEDURE IF EXISTS delete_Empleado_Cargo;
 DELIMITER //
@@ -242,7 +245,7 @@ begin
 	delete from Empleado_cargo where ID_empleado_cargo = id;
 END //
 DELIMITER ;  
-
+call delete_Empleado_Cargo(2);
 -- Procedimiento para ingresar Sueldo_cargo
 DROP PROCEDURE IF EXISTS ingresar_Sueldo_Cargo;
 DELIMITER //
@@ -254,7 +257,7 @@ begin
 	insert into Sueldo_cargo(sueldo,ID_empleado)  values(sueldo, id_emp);
 END //
 DELIMITER ;  
-
+call ingresar_Sueldo_cargo(900,36);
 -- Procedimiento para actualizar Sueldo_cargo
 DROP PROCEDURE IF EXISTS update_Sueldo_Cargo;
 DELIMITER //
@@ -272,6 +275,7 @@ begin
     ID_sueldo_cargo = id;
 END //
 DELIMITER ;  
+call update_Sueldo_Cargo(14,900,36);
 -- Procedimiento para elimintar Sueldos_cargos
 DROP PROCEDURE IF EXISTS delete_Sueldo_Cargo;
 DELIMITER //
@@ -282,7 +286,7 @@ begin
 	delete from Sueldo_cargo where ID_sueldo_cargo = id;
 END //
 DELIMITER ;
-
+call delete_Sueldo_Cargo(14);
 
 -- ********** Tabla Aforo **********
 -- Procedimiento para ingresar un aforo.
@@ -296,7 +300,7 @@ BEGIN
 	INSERT INTO Aforo (aforo_permitido,aforo_actual) VALUES (aforo_permitido,aforo_actual);
 END //
 DELIMITER;
-
+call Ingresar_aforo(30,21);
 -- Procedimiento para actualizar un aforo.
 DROP PROCEDURE IF EXISTS Actualizar_aforo;
 DELMITER //
@@ -309,7 +313,7 @@ BEGIN
 	UPDATE Aforo SET aforo_permitido = aforo_permitido, aforo_actual = aforo_actual WHERE ID_aforo = ID;
 END //
 DELIMITER;
-
+call Actualizar_aforo(4,30,21);
 -- Procedimiento para eliminar un aforo.
 DROP PROCEDURE IF EXISTS Eliminar_aforo;
 DELIMITER //
@@ -320,7 +324,7 @@ BEGIN
 	DELETE FROM Aforo WHERE ID_aforo = ID;
 END //
 DELIMITER;
-
+call Eliminar_aforo(4);
 
 -- ********** Tabla Visita **********
 -- Procedimiento para ingresar una visita.
@@ -554,7 +558,7 @@ begin
 	select * from Empleado where ID_empleado = id;
 END //
 DELIMITER ;
-
+call informacionEmpleado(21);
 -- Aforo de un dia en especifico
 DROP PROCEDURE IF EXISTS ver_Aforo;
 DELIMITER //
@@ -565,7 +569,7 @@ begin
 	select count(cedula_usuario) as Aforo, ID_tienda from Visita where fecha_entrada =fecha group by ID_tienda;
 END //
 DELIMITER ;
-
+call ver_Aforo("2021-04-01");
 -- Nombre del usuario que han realizado visita mayor a 10 minutos
 DROP PROCEDURE IF EXISTS usuario_Visita_Mayor_10mins;
 DELIMITER //
@@ -573,9 +577,10 @@ CREATE PROCEDURE usuario_Visita_Mayor_10mins(
 in fecha DATE
 )
 begin
-	select cedula_usuario, nombres, apellidos from Usuario, Visita v where time(v.tiempo_duracion) > '00:10:00';
-END //
+	select  nombres, apellidos from Usuario u, Visita v where time(v.tiempo_duracion) > '00:10:00' 
+	and v.fecha_entrada = fecha and v.cedula_usuario = u.cedula_usuario;END //
 DELIMITER ;
+call usuario_Visita_Mayor_10mins("2021-07-18");
 
 -- Nombres de tienda que se encuentran en el primer piso
 DROP PROCEDURE IF EXISTS tiendas_PrimerPiso;
@@ -586,6 +591,7 @@ begin
 	select * from Tiendas_Primer_Piso;
 END //
 DELIMITER ;
+call tiendas_PrimerPiso;
  -- El tipo de tiendas que tienen un aforo permitido menor a 50 
  DROP PROCEDURE IF EXISTS tipoTienda_Aforo_menor50;
 DELIMITER //
@@ -595,25 +601,27 @@ begin
 	select * from Tipo_tienda;
 END //
 DELIMITER ;
- -- Nombres de los empleados que trabajan en una tienda tipo restaurante 
- DROP PROCEDURE IF EXISTS empleados_Restaurante;
+call tipoTienda_Aforo_menor50();
+ -- Nombres de los empleados que trabajan en una tienda tipo ropa 
+ DROP PROCEDURE IF EXISTS empleados_Ropa;
 DELIMITER //
-CREATE PROCEDURE empleados_Restaurante(
+CREATE PROCEDURE empleados_Ropa(
 )
 begin
-	select e.nombres from Empleado e, Tienda t where t.tipo = 'restaurante' and e.ID_tienda = t.ID_tienda;
+	select e.nombres from Empleado e, Tienda t where t.tipo = 'ropa' and e.ID_tienda = t.ID_tienda;
 END //
 DELIMITER ;
+call empleados_Ropa();
  -- La ocupación de los usuarios que han visitado una tienda en el piso 2
- DROP PROCEDURE IF EXISTS tiendas_PrimerPiso;
+ DROP PROCEDURE IF EXISTS ocupacion_usuario_tiendas_PrimerPiso;
 DELIMITER //
-CREATE PROCEDURE tiendas_PrimerPiso(
+CREATE PROCEDURE ocupacion_usuario_tiendas_PrimerPiso(
 )
 begin
 	select * from Ocupacion_Usuario;
 END //
 DELIMITER ;
-
+call ocupacion_usuario_tiendas_PrimerPiso();
  -- La cantidad de empleados que hay por tienda
 DROP PROCEDURE IF EXISTS cantidad_Empleados_PorPiso;
 DELIMITER //

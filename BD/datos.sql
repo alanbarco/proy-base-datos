@@ -265,6 +265,7 @@ INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-01","2021-04-01","2021-04-01 04:03:00","0192437856",12);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-05","2021-04-05","2021-04-05 00:35:50","0924173695",4);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
+INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-28","2021-04-28","2021-04-28 00:33:33","0983645712",6);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-28","2021-04-28","2021-04-28 00:56:33","0643701258",20);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-16","2021-05-16","2021-05-16 02:04:55","0851347260",15);
@@ -280,7 +281,6 @@ INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-18","2021-07-18","2021-07-18 06:11:35","0278634015",14);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-22","2021-07-22","2021-07-22 01:45:05","0921738605",1);
 INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-25","2021-07-25","2021-07-25 00:48:07","0990673584",5);
-
 
 
 -- Tabla Consultor_externo
@@ -407,47 +407,43 @@ call ingresar_Empleado_Cargo('Atencion al cliente',53);
 
 -- Tabla Sueldo_cargo
 
-insert into Sueldo_cargo(sueldo,ID_empleado) values('1500',9);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('1500',10);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('1500',11);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('1500',12);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',13);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',15);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',16);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',17);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',18);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('900',19);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('900',20);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('900',21);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('900',22);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('900',23);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('600',24);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('600',2);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',3);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',4);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',5);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',6);
-insert into Sueldo_cargo(sueldo,ID_empleado) values('500',7);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(1500,9);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(1500,10);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(1500,11);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(1500,12);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,13);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,15);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,16);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,17);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,18);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(900,19);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(900,20);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(900,21);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(900,22);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(900,23);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(600,24);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(600,2);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,3);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,4);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,5);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,6);
+insert into Sueldo_cargo(sueldo,ID_empleado) values(500,7);
 select * from Sueldo_cargo;
-call ingresar_Sueldo_cargo('900',34);
-call ingresar_Sueldo_cargo('600',35);
-call ingresar_Sueldo_cargo('900',36);
-call ingresar_Sueldo_cargo('600',37);
-call ingresar_Sueldo_cargo('600',38);
-call ingresar_Sueldo_cargo('600',39);
-call ingresar_Sueldo_cargo('600',40);
-call ingresar_Sueldo_cargo('600',41);
-call ingresar_Sueldo_cargo('500',42);
-call ingresar_Sueldo_cargo('900',43);
-call ingresar_Sueldo_cargo('500',44);
-call ingresar_Sueldo_cargo('400',45);
-call ingresar_Sueldo_cargo('400',46);
-call ingresar_Sueldo_cargo('500',47);
-call ingresar_Sueldo_cargo('900',48);
-call ingresar_Sueldo_cargo('500',49);
-call ingresar_Sueldo_cargo('900',50);
-call ingresar_Sueldo_cargo('500',51);
-call ingresar_Sueldo_cargo('900',52);
-call ingresar_Sueldo_cargo('900',53);
-call ingresar_Sueldo_cargo('900',54);
-call ingresar_Sueldo_cargo('500',55);
+call ingresar_Sueldo_cargo(900,34);
+call ingresar_Sueldo_cargo(600,35);
+call ingresar_Sueldo_cargo(900,36);
+call ingresar_Sueldo_cargo(600,37);
+call ingresar_Sueldo_cargo(600,38);
+call ingresar_Sueldo_cargo(600,39);
+call ingresar_Sueldo_cargo(600,40);
+call ingresar_Sueldo_cargo(600,41);
+call ingresar_Sueldo_cargo(500,42);
+call ingresar_Sueldo_cargo(900,43);
+call ingresar_Sueldo_cargo(500,44);
+call ingresar_Sueldo_cargo(400,45);
+call ingresar_Sueldo_cargo(400,46);
+call ingresar_Sueldo_cargo(500,47);
+call ingresar_Sueldo_cargo(900,48);
+call ingresar_Sueldo_cargo(900,50);
+
+select * from Sueldo_cargo;
