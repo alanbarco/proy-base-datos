@@ -163,12 +163,11 @@ DELIMITER ;
 DROP PROCEDURE IF EXISTS ingresar_Telefono;
 DELIMITER //
 CREATE PROCEDURE ingresar_Telefono(
-in id int,
 in id_emp int,
 in numero varchar(10)
 )
 begin
-	insert into Telefono values(id, id_emp, numero);
+	insert into Telefono(numero, ID_empleado) values(id_emp, numero);
 END //
 DELIMITER ;  
 

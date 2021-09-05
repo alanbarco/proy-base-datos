@@ -20,6 +20,27 @@ INSERT INTO Aforo (aforo_permitido,aforo_actual) VALUES (20,10);
 INSERT INTO Aforo (aforo_permitido,aforo_actual) VALUES (100,50);
 INSERT INTO Aforo (aforo_permitido,aforo_actual) VALUES (110,100);
 INSERT INTO Aforo (aforo_permitido,aforo_actual) VALUES (30,150);
+call Ingresar_aforo(30,20);
+call Ingresar_aforo(40,40);
+call Ingresar_aforo(50,30);
+call Ingresar_aforo(40,10);
+call Ingresar_aforo(50,25);
+call Ingresar_aforo(30,21);
+call Ingresar_aforo(40,34);
+call Ingresar_aforo(30,21);
+call Ingresar_aforo(50,36);
+call Ingresar_aforo(30,21);
+call Ingresar_aforo(30,8);
+call Ingresar_aforo(40,9);
+call Ingresar_aforo(30,10);
+call Ingresar_aforo(40,12);
+call Ingresar_aforo(50,45);
+call Ingresar_aforo(50,50);
+call Ingresar_aforo(30,11);
+call Ingresar_aforo(40,12);
+call Ingresar_aforo(30,13);
+call Ingresar_aforo(50,14);
+call Ingresar_aforo(40,15);
 
 
 
@@ -45,7 +66,27 @@ insert into Tienda values(17,  'Bolos', 17, 'Entretenimiento',2,17);
 insert into Tienda values(18,  'Menestras del negro', 18, 'Comida',3,18);
 insert into Tienda values(19,  'Ping pong', 19, 'Entretenimiento',1,19);
 insert into Tienda values(20,  'Dominos pizza', 20, 'Comida',2,20);
-
+desc Tienda;
+call ingresar_tienda(21,  'Tienda 21', 21, 'Comida', 1,21 );
+call ingresar_tienda(22,  'Tienda 22', 22, 'Entretenimiento',1 , 22);
+call ingresar_tienda(23,  'Tienda 23', 23, 'Comida',1 , 23);
+call ingresar_tienda(24,  'Tienda 24', 24, 'Ropa', 1, 24);
+call ingresar_tienda(25,  'Tienda 25', 25, 'Entretenimiento',1 ,25 );
+call ingresar_tienda(26,  'Tienda 26', 26, 'Entretenimiento', 1,26 );
+call ingresar_tienda(27,  'Tienda 27', 27, 'Ropa',2 ,27 );
+call ingresar_tienda(28,  'Tienda28', 28, 'Entretenimiento', 2,28 );
+call ingresar_tienda(29,  'Tienda 29', 29, 'Ropa',2 , 29);
+call ingresar_tienda(30,  'Tienda 30', 30, 'Artefactos',2 ,30 );
+call ingresar_tienda(31,  'Tienda 31', 31, 'Artefactos', 2, 31);
+call ingresar_tienda(32,  'Tienda 32', 32, 'Entretenimiento',2 , 32);
+call ingresar_tienda(33,  'Tienda 33', 33, 'Entretenimiento', 2, 33);
+call ingresar_tienda(34,  'Tienda 34', 34, 'Ropa', 3, 34);
+call ingresar_tienda(35,  'Tienda 35', 35, 'Comida', 3, 35);
+call ingresar_tienda(36,  'Tienda 36', 36, 'Artefactos',3 ,36 );
+call ingresar_tienda(37,  'Tienda 37', 37, 'Comida', 3,37 );
+call ingresar_tienda(38,  'Tienda 38', 38, 'Ropa', 3,38 );
+call ingresar_tienda(39,  'Tienda 39', 39, 'Ropa', 3,39 );
+call ingresar_tienda(40,  'Tienda 40', 40, 'Comida',3 , 40);
 
 
 
@@ -72,7 +113,23 @@ insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,c
 insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,canton,provincia) values ('Av 9', 'Calle 14', 870, 'Duran', 'Guayas');
 insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,canton,provincia) values ('Av 8', 'Calle 1', 97, 'Duran', 'Guayas');
 insert into Direccion_domiciliaria(calle_primaria, calle_secundaria,numeracion,canton,provincia) values ('Av 9', 'Calle 2', 456, 'Duran', 'Guayas');
-
+call ingresar_direccion('Av 10', 'Calle 1', 444, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 9', 'Calle b', 11, 'Duran', 'Guayas');
+call ingresar_direccion('Av 8', 'Calle b', 45, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 7', 'Calle c', 777, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 6', 'Calle f', 44, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 5', 'Calle g', 1, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 7', 'Calle h', 2, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 4', 'Calle i', 323, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 7', 'Calle h', 45, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 8', 'Calle a', 787, 'Duran', 'Guayas');
+call ingresar_direccion('Av 10', 'Calle b', 454, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 10', 'Calle c', 85, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 10', 'Calle d', 32, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 7', 'Calle a', 25, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 5', 'Calle d', 244, 'Guayaquil', 'Guayas');
+call ingresar_direccion('Av 5', 'Calle e', 144, 'Duran', 'Guayas');
+call ingresar_direccion('Av 12', 'Calle asdasd', 144, 'Guayaquil', 'Guayas');
 
 
 -- Tabla Empleado
@@ -101,9 +158,26 @@ insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electroni
 insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0758930420', "Tabata", "Palmer", '1985-06-23', "tabpal@hotmail.com", 'M',1 ,10,11);
 insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0851730456', "Mayerly", "Avellan", '1999-02-16', "mayave@gmail.com", 'M',2 ,10,12);
 insert into Empleado(cedula,nombres, apellidos,fecha_nacimiento,correo_electronico,sexo,ID_tienda,ID_direccion,ID_empleado2) values('0951730421', "Paula", "Idrovo", '2001-02-10', "paulaidr@hotmail.com", 'M',1 ,13,9);
+call insertar_empleado('0951730421', "Ramona", "Tobar", '1996-02-10', "asda@hotmail.com", 'M',20 ,13,9);
+call insertar_empleado('0951734444', "Luis", "Mancheno", '2002-02-10', "cc@hotmail.com", 'H',21 ,13,10);
+call insertar_empleado('0951732222', "Elisa", "Cobos", '1974-02-10', "qwe@hotmail.com", 'M',22 ,13,11);
+call insertar_empleado('0951730455', "Xavier", "Vera", '1968-02-10', "vv@hotmail.com", 'H',23 ,13,13);
+call insertar_empleado('0951730487', "Jose", "Snadoval", '1969-02-10', "aa@hotmail.com", 'H',24 ,13,10);
+call insertar_empleado('0951730400', "Luis", "Guale", '1998-02-10', "qq@hotmail.com", 'H',25 ,13,11);
+call insertar_empleado('0951730433', "Luis", "Elbert", '2000-02-10', "ee@hotmail.com", 'H',26 ,13,9);
+call insertar_empleado('0951730455', "Ariana", "Andrade", '1978-02-10', "ff@hotmail.com", 'M',27 ,13,10);
+call insertar_empleado('0951745421', "Tatiana", "Andrade", '1972-02-10', "vv@hotmail.com", 'M',28 ,13,11);
+call insertar_empleado('0978730421', "Emily", "Ramirez", '1994-02-10', "cc@hotmail.com", 'M',29 ,13,9);
+call insertar_empleado('0951730421', "Lisseth", "Tabor", '1995-02-10', "gg@hotmail.com", 'M',30 ,13,10);
+call insertar_empleado('0951240421', "Margarita", "Gaspar", '1996-02-10', "bb@hotmail.com", 'M',31 ,13,10);
+call insertar_empleado('0951790421', "Arturo", "Bastidas", '1997-02-10', "jj@hotmail.com", 'H',32 ,13,11);
+call insertar_empleado('0951460421', "Arturo", "Jumbo", '1995-02-10', "hh@hotmail.com", 'H',33 ,13,10);
+call insertar_empleado('0951530421', "Arturo", "Rodriguez", '1996-02-10', "yy@hotmail.com", 'H',34 ,13,11);
+call insertar_empleado('0951720421', "Angeles", "Rodriguez", '1997-02-10', "rr@hotmail.com", 'M',35 ,13,10);
+call insertar_empleado('0951701421', "Maria", "Rodriguez", '1995-02-10', "vcvsd@hotmail.com", 'M',36 ,13,9);
 
-
-
+select count(*) from Empleado;
+select * from Tienda;
 
 -- Tabla Telefono
 
@@ -128,8 +202,26 @@ insert into Telefono(numero, ID_empleado) values('0996908527',2);
 insert into Telefono(numero, ID_empleado) values('0931672831',3);
 insert into Telefono(numero, ID_empleado) values('0994103733',5);
 insert into Telefono(numero, ID_empleado) values('0987253128',4);
-
-
+select * from Telefono;
+call ingresar_Telefono('0987253128',34);
+call ingresar_Telefono('0987241128',35);
+call ingresar_Telefono('0984453128',36);
+call ingresar_Telefono('0984553128',37);
+call ingresar_Telefono('0987253128',38);
+call ingresar_Telefono('0987453128',39);
+call ingresar_Telefono('0987253128',40);
+call ingresar_Telefono('0988853128',41);
+call ingresar_Telefono('0987223128',42);
+call ingresar_Telefono('0987443128',43);
+call ingresar_Telefono('0987753128',45);
+call ingresar_Telefono('0987253144',46);
+call ingresar_Telefono('0945253128',47);
+call ingresar_Telefono('0900253128',48);
+call ingresar_Telefono('0987113128',49);
+call ingresar_Telefono('0987244128',50);
+call ingresar_Telefono('0987255528',51);
+call ingresar_Telefono('0987257728',52);
+call ingresar_Telefono('0977253128',53);
 
 -- Tabla Usuario
 
@@ -290,7 +382,26 @@ insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',3);
 insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',7);
 insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',8);
 insert into Empleado_cargo(cargo,ID_empleado) values('Cajero',6);
-
+call ingresar_Empleado_Cargo('RRHH',34);
+call ingresar_Empleado_Cargo('RRHH',35);
+call ingresar_Empleado_Cargo('Atencion al cliente',36);
+call ingresar_Empleado_Cargo('RRHH',37);
+call ingresar_Empleado_Cargo('Cajero',38);
+call ingresar_Empleado_Cargo('Cajero',39);
+call ingresar_Empleado_Cargo('Cajero',40);
+call ingresar_Empleado_Cargo('Cajero',41);
+call ingresar_Empleado_Cargo('RRHH',42);
+call ingresar_Empleado_Cargo('RRHH',43);
+call ingresar_Empleado_Cargo('Atencion al cliente',44);
+call ingresar_Empleado_Cargo('Cajero',45);
+call ingresar_Empleado_Cargo('RRHH',46);
+call ingresar_Empleado_Cargo('Cajero',47);
+call ingresar_Empleado_Cargo('RRHH',48);
+call ingresar_Empleado_Cargo('Atencion al cliente',49);
+call ingresar_Empleado_Cargo('Cajero',50);
+call ingresar_Empleado_Cargo('RRHH',51);
+call ingresar_Empleado_Cargo('RRHH',52);
+call ingresar_Empleado_Cargo('Atencion al cliente',53);
 
 
 
@@ -317,3 +428,26 @@ insert into Sueldo_cargo(sueldo,ID_empleado) values('500',4);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('500',5);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('500',6);
 insert into Sueldo_cargo(sueldo,ID_empleado) values('500',7);
+select * from Sueldo_cargo;
+call ingresar_Sueldo_cargo('900',34);
+call ingresar_Sueldo_cargo('600',35);
+call ingresar_Sueldo_cargo('900',36);
+call ingresar_Sueldo_cargo('600',37);
+call ingresar_Sueldo_cargo('600',38);
+call ingresar_Sueldo_cargo('600',39);
+call ingresar_Sueldo_cargo('600',40);
+call ingresar_Sueldo_cargo('600',41);
+call ingresar_Sueldo_cargo('500',42);
+call ingresar_Sueldo_cargo('900',43);
+call ingresar_Sueldo_cargo('500',44);
+call ingresar_Sueldo_cargo('400',45);
+call ingresar_Sueldo_cargo('400',46);
+call ingresar_Sueldo_cargo('500',47);
+call ingresar_Sueldo_cargo('900',48);
+call ingresar_Sueldo_cargo('500',49);
+call ingresar_Sueldo_cargo('900',50);
+call ingresar_Sueldo_cargo('500',51);
+call ingresar_Sueldo_cargo('900',52);
+call ingresar_Sueldo_cargo('900',53);
+call ingresar_Sueldo_cargo('900',54);
+call ingresar_Sueldo_cargo('500',55);
