@@ -331,6 +331,7 @@ call Eliminar_aforo(4);
 DROP PROCEDURE IF EXISTS Ingresar_visita;
 DELIMITER //
 CREATE PROCEDURE Ingresar_visita(
+	IN ID INT,
 	IN fecha_entrada DATE,
 	IN fecha_salida DATE,
 	IN tiempo_duracion DATETIME,
@@ -338,9 +339,11 @@ CREATE PROCEDURE Ingresar_visita(
 	IN ID_tienda INT(20)
 )
 BEGIN 
-	INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (fecha_entrada, fecha_salida, tiempo_duracion, cedula_usuario, ID_tienda);
+	INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (ID, fecha_entrada, fecha_salida, tiempo_duracion, cedula_usuario, ID_tienda);
 END //
-DELIMITER;
+DELIMITER //
+
+call Ingresar_visita(32,"2021-01-05","2021-01-05","2021-01-05 00:05:00","0638285320",22);
 
 -- Procedimiento para actualizar una visita.
 DROP PROCEDURE IF EXISTS Actualizar_visita;
@@ -358,6 +361,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Actualizar_visita(13,"2021-02-20","2021-02-20","2021-02-20 01:27:00","0321467958",3);
+
 -- Procedimiento para eliminar una visita.
 DROP PROCEDURE IF EXISTS Eliminar_visita;
 DELIMITER //
@@ -369,6 +374,7 @@ BEGIN
 END //
 DELIMITER;
 
+call Eliminar_visita(52);
 
 -- ********** Tabla Usuario **********
 -- Procedimiento para ingresar un usuario.
@@ -391,6 +397,9 @@ BEGIN
 END //
 DELIMITER;
 
+call Ingresar_usuario("0930452178","Juan","Pueblo","juanpueblo@gmail.com","1990-04-01","Casado","Científico","M",15,10);
+
+
 -- Procedimiento para actualizar un usuario.
 CREATE PROCEDURE IF EXISTS Actualizar_usuario;
 DELIMITER //
@@ -411,6 +420,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Actualizar_usuario("0930452178","Hola","Mundo","holamundo@gmail.com","2000-01-25","Casado","Científico","M",10,4);
+
 -- Procedimiento para eliminar un usuario.
 DROP PROCEDURE IF EXISTS Eliminar_usuario;
 DELIMITER //
@@ -422,21 +433,25 @@ BEGIN
 END //
 DELIMITER;
 
+call Eliminar_usuario("0956662341");
 
 -- ********** Tabla Consultor_externo **********
 -- Procedimiento para ingresar un consultor externo.
 DROP PROCEDURE IF EXISTS Ingresar_consultor_externo;
 DELIMITER //
 CREATE PROCEDURE Ingresar_consultor_externo(
+	IN ID INT,
 	IN tiempo_de_conexion DATETIME,
 	IN nombre_empresa VARCHAR(50),
 	IN numero_de_reportes_solicitados INT(100),
 	IN cedula_usuario VARCHAR(20)
 )
 BEGIN 
- INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES (tiempo_de_conexion, nombre_empresa, numero_de_reportes_solicitados, cedula_usuario);
+ INSERT INTO Consultor_externo (ID_consultor, tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES (ID, tiempo_de_conexion, nombre_empresa, numero_de_reportes_solicitados, cedula_usuario);
 END //
-DELIMITER;
+DELIMITER //
+
+call Ingresar_consultor_externo(21,"2021-01-04 00:15:33","Tencent",3,"0702118500");
 
 -- Procedimiento para actualizar un consultor externo.
 DROP PROCEDURE IF EXISTS Actualizar_consultor_externo;
@@ -451,7 +466,9 @@ CREATE PROCEDURE Actualizar_consultor_externo(
 BEGIN 
 	UPDATE Consultor_externo SET tiempo_de_conexion = tiempo_de_conexion, nombre_empresa = nombre_empresa, numero_de_reportes_solicitados = numero_de_reportes_solicitados, cedula_usuario = cedula_usuario WHERE ID_consultor = ID;
 END //
-DELIMITER;
+DELIMITER //
+
+call Actualizar_consultor_externo(21,"2021-01-04 00:15:33","Tencent",15,"0702118500");
 
 -- Procedimiento para eliminar un consultor externo.
 DROP PROCEDURE IF EXISTS Eliminar_consultor_externo;
@@ -463,6 +480,8 @@ BEGIN
 	DELETE FROM Consultor_externo WHERE ID_consultor = ID;
 END //
 DELIMITER;
+
+call Eliminar_consultor_externo(40);
 
 
 -- ********** Tabla Administrador **********
@@ -480,6 +499,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Ingresar_administrador(1000.00,"2021-01-05 10:00:00",15,"0638285320");
+
 -- Procedimiento para actualizar un administrador.
 DROP PROCEDURE IF EXISTS Actualizar_administrador;
 DELIMITER //
@@ -495,6 +516,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Actualizar_administrador(35,"2021-01-05 10:00:00",15,"0638285320");
+
 -- Procedimiento para eliminar un administrador.
 DROP PROCEDURE IF EXISTS Eliminar_administrador;
 DELIMITER //
@@ -506,6 +529,7 @@ BEGIN
 END //
 DELIMITER;
 
+call Eliminar_administrador(40);
 
 -- ********** Tabla Cliente **********
 -- Procedimiento para ingresar un cliente.
@@ -521,6 +545,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Ingresar_cliente("2021-01-03 00:05:00",2,"0534267891");
+
 -- Procedimiento para actualizar un cliente.
 DROP PROCEDURE IF EXISTS Actualizar_cliente;
 DELIMITER //
@@ -535,6 +561,8 @@ BEGIN
 END //
 DELIMITER;
 
+call Actualizar_cliente(30,"2021-01-03 00:05:00",2,"0534267891");
+
 -- Procedimiento para eliminar un cliente.
 DROP PROCEDURE IF EXISTS Eliminar_cliente;
 DELIMITER //
@@ -546,6 +574,7 @@ BEGIN
 END //
 DELIMITER;
 
+call Eliminar_cliente(40);
 
 
 -- Consultar informacion de empleado 

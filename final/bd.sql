@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS Usuario(
 -- Creación de la tabla Visita
 
 CREATE TABLE IF NOT EXISTS Visita(
-	ID_visita INTEGER PRIMARY KEY AUTO_INCREMENT,
+	ID_visita INTEGER PRIMARY KEY,
 	fecha_entrada DATE NOT NULL,
 	fecha_salida DATE NOT NULL,
 	tiempo_duracion DATETIME NOT NULL,
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS Visita(
 -- Creación de la tabla Consultor_externo
 
 CREATE TABLE IF NOT EXISTS Consultor_externo(
-	ID_consultor INTEGER PRIMARY KEY AUTO_INCREMENT,
+	ID_consultor INTEGER PRIMARY KEY,
 	tiempo_de_conexion DATETIME NOT NULL,
 	nombre_empresa VARCHAR(50) NOT NULL,
 	numero_de_reportes_solicitados INT(100) NOT NULL,

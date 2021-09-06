@@ -245,67 +245,125 @@ INSERT INTO Usuario VALUES ("0123780456","Katherine","Johnson","katherinejohnson
 INSERT INTO Usuario VALUES ("0983645712","Malala","Yousafzai","malalayousafzai@gmail.com","2012-05-11","Casado","Químico","F",11,17);
 INSERT INTO Usuario VALUES ("0412573869","Ada","Lovelace","adalovelace@gmail.com","2017-09-23","Divorciado","Navegante","F",19,1);
 INSERT INTO Usuario VALUES ("0643701258","Coco","Chanel","cocochanel@gmail.com","1973-08-14","Viudo","Matemático","F",13,12);
+call Ingresar_usuario("0702118500","Eloy","Alfaro","eloyalfaro@gmail.com","1955-06-28","Soltero","Militar","M",21,40);
+call Ingresar_usuario("0638285320","Oswaldo","Guayasamín","oswaldoguayasamin@gmail.com","1950-04-18","Divorciado","Científico","M",23,38);
+call Ingresar_usuario("0243791668","Julio","Jaramillo","juliojaramillo@gmail.com","1977-03-13","Viudo","Político","M",25,36);
+call Ingresar_usuario("0654817923","Abdón","Calderón","abdoncalderon@gmail.com","1980-011-23","Casado","Matemático","M",27,34);
+call Ingresar_usuario("0124768593","Juan","Montalvo","juanmontalvo@gmail.com","1940-10-20","Soltero","Químico","M",29,32);
+call Ingresar_usuario("0794536812","Leonidas","Proaño","leonidasproaño@gmail.com","1945-01-04","Divorciado","Navegante","M",31,30);
+call Ingresar_usuario("0438715962","Eugenio","Espejo","eugenioespejo@gmail.com","1965-02-10","Viudo","Científico","M",33,28);
+call Ingresar_usuario("0534267891","Jorge","Icaza","jorgeicaza@gmail.com","1926-03-08","Casado","Militar","M",35,26);
+call Ingresar_usuario("0346758912","Arturo","Borja","arturoborja@gmail.com","1982-04-18","Soltero","Político","M",37,24);
+call Ingresar_usuario("0841695723","Benjamín","Carrión","benjamincarrion@gmail.com","1987-05-07","Divorciado","Matemático","M",39,22);
+call Ingresar_usuario("0263859714","Dolores","Veintimilla","doloresveintimilla@gmail.com","1950-06-27","Viudo","Químico","F",35,35);
+call Ingresar_usuario("0315829567","Ana","Villamil","anavillamil@gmail.com","1960-07-30","Casado","Navegante","F",23,37);
+call Ingresar_usuario("0741852369","Gabriela","Mistral","gabrielamistral@gmail.com","1970-07-20","Soltero","Científico","F",15,07);
+call Ingresar_usuario("0321467958","Isabel","Allende","isabelallende@gmail.com","1980-06-14","Divorciado","Militar","F",20,17);
+call Ingresar_usuario("0759316824","Rosa","Parks","rosaparks@gmail.com","1990-11-24","Viudo","Político","F",10,10);
+call Ingresar_usuario("0637854912","Rosalind","Franklin","rosalindfranklin@gmail.com","2000-03-05","Casado","Matemático","F",20,15);
+call Ingresar_usuario("0256187439","Angela","Merkel","angelamerkel@gmail.com","1955-06-25","Soltero","Químico","F",30,20);
+call Ingresar_usuario("0684579123","Virginia","Woolf","virginiawoolf@gmail.com","1965-09-15","Divorciado","Navegante","F",40,25);
+call Ingresar_usuario("0789251346","Amelia","Earhart","ameliaearhart@gmail.com","1975-12-30","Viudo","Científico","F",05,01);
+call Ingresar_usuario("0536197824","Mata","Hari","matahari@gmail.com","1985-12-30","Casado","Militar","F",13,38);
+call Ingresar_usuario("0956662341","Cristiano","Ronaldo","crisitanoronaldo@gmail.com","1950-12-30","Casado","Político","F",13,38);
 
 
 
 -- Tabla Visita
 
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-01-04","2021-01-04","2021-01-04 05:52:36","0643701258",9);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-01-15","2021-01-15","2021-01-15 00:12:17","0984362751",2);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-01-28","2021-01-28","2021-01-28 10:33:09","0875269130",18);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-01-28","2021-01-28","2021-01-28 01:32:15","0215869743",11);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-02-06","2021-02-06","2021-02-06 01:05:00","0867530149",19);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-02-13","2021-02-13","2021-02-13 09:21:19","0867530149",7);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-02-13","2021-02-13","2021-02-13 03:21:39","0643701258",4);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-02-14","2021-02-14","2021-02-14 02:22:37","0939461758",8);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-03-12","2021-03-12","2021-03-12 03:23:14","0924173695",4);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-03-12","2021-03-12","2021-03-12 02:04:55","0851347260",20);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-03-23","2021-03-23","2021-03-23 03:16:30","0571034689",10);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-03-31","2021-03-31","2021-03-31 00:46:29","0361407592",10);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-01","2021-04-01","2021-04-01 04:03:00","0192437856",12);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-05","2021-04-05","2021-04-05 00:35:50","0924173695",4);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-28","2021-04-28","2021-04-28 00:33:33","0983645712",6);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-04-28","2021-04-28","2021-04-28 00:56:33","0643701258",20);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-16","2021-05-16","2021-05-16 02:04:55","0851347260",15);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-17","2021-05-17","2021-05-17 15:20:33","0983645712",3);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-17","2021-05-17","2021-05-17 09:21:19","0921738605",18);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-21","2021-05-21","2021-05-21 01:36:19","0123780456",12);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-05-29","2021-05-29","2021-05-29 05:53:20","0568374219",13);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-06-12","2021-06-12","2021-06-12 06:00:50","0258716394",16);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-06-20","2021-06-20","2021-06-20 12:06:01","0412573869",14);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-06-30","2021-06-30","2021-06-30 06:11:35","0215869743",6);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-06-30","2021-06-30","2021-06-30 00:08:12","0921738605",17);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-02","2021-07-02","2021-07-02 07:50:00","0941850327",19);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-18","2021-07-18","2021-07-18 06:11:35","0278634015",14);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-22","2021-07-22","2021-07-22 01:45:05","0921738605",1);
-INSERT INTO Visita (fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES ("2021-07-25","2021-07-25","2021-07-25 00:48:07","0990673584",5);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (1,"2021-01-04","2021-01-04","2021-01-04 05:52:36","0643701258",9);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (2,"2021-01-15","2021-01-15","2021-01-15 00:12:17","0984362751",2);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (3,"2021-01-28","2021-01-28","2021-01-28 10:33:09","0875269130",18);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (4,"2021-01-28","2021-01-28","2021-01-28 01:32:15","0215869743",11);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (5,"2021-02-06","2021-02-06","2021-02-06 01:05:00","0867530149",19);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (6,"2021-02-13","2021-02-13","2021-02-13 09:21:19","0867530149",7);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (7,"2021-02-13","2021-02-13","2021-02-13 03:21:39","0643701258",4);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (8,"2021-02-14","2021-02-14","2021-02-14 02:22:37","0939461758",8);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (9,"2021-03-12","2021-03-12","2021-03-12 03:23:14","0924173695",4);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (10,"2021-03-12","2021-03-12","2021-03-12 02:04:55","0851347260",20);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (11,"2021-03-23","2021-03-23","2021-03-23 03:16:30","0571034689",10);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (12,"2021-03-31","2021-03-31","2021-03-31 00:46:29","0361407592",10);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (13,"2021-04-01","2021-04-01","2021-04-01 04:03:00","0192437856",12);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (14,"2021-04-05","2021-04-05","2021-04-05 00:35:50","0924173695",4);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (15,"2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (16,"2021-04-24","2021-04-24","2021-04-24 04:10:04","0278634015",11);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (17,"2021-04-28","2021-04-28","2021-04-28 00:33:33","0983645712",6);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (18,"2021-04-28","2021-04-28","2021-04-28 00:56:33","0643701258",20);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (19,"2021-05-16","2021-05-16","2021-05-16 02:04:55","0851347260",15);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (20,"2021-05-17","2021-05-17","2021-05-17 15:20:33","0983645712",3);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (21,"2021-05-17","2021-05-17","2021-05-17 09:21:19","0921738605",18);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (22,"2021-05-21","2021-05-21","2021-05-21 01:36:19","0123780456",12);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (23,"2021-05-29","2021-05-29","2021-05-29 05:53:20","0568374219",13);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (24,"2021-06-12","2021-06-12","2021-06-12 06:00:50","0258716394",16);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (25,"2021-06-20","2021-06-20","2021-06-20 12:06:01","0412573869",14);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (26,"2021-06-30","2021-06-30","2021-06-30 06:11:35","0215869743",6);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (27,"2021-06-30","2021-06-30","2021-06-30 00:08:12","0921738605",17);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (28,"2021-07-02","2021-07-02","2021-07-02 07:50:00","0941850327",19);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (29,"2021-07-18","2021-07-18","2021-07-18 06:11:35","0278634015",14);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (30,"2021-07-22","2021-07-22","2021-07-22 01:45:05","0921738605",1);
+INSERT INTO Visita (ID_visita, fecha_entrada,fecha_salida,tiempo_duracion,cedula_usuario,ID_tienda) VALUES (31,"2021-07-25","2021-07-25","2021-07-25 00:48:07","0990673584",5);
+call Ingresar_visita(33,"2021-01-13","2021-01-13","2021-01-13 00:13:23","0654817923",25);
+call Ingresar_visita(34,"2021-01-18","2021-01-18","2021-01-18 00:25:45","0794536812",27);
+call Ingresar_visita(35,"2021-01-24","2021-01-24","2021-01-24 00:45:12","0534267891",29);
+call Ingresar_visita(36,"2021-02-26","2021-02-26","2021-02-26 01:45:19","0841695723",31);
+call Ingresar_visita(37,"2021-02-16","2021-02-16","2021-02-16 01:00:30","0315829567",33);
+call Ingresar_visita(38,"2021-02-20","2021-02-20","2021-02-20 01:27:00","0321467958",35);
+call Ingresar_visita(39,"2021-02-01","2021-02-01","2021-02-01 01:58:22","0637854912",37);
+call Ingresar_visita(40,"2021-03-08","2021-03-08","2021-03-08 02:17:57","0684579123",39);
+call Ingresar_visita(41,"2021-03-10","2021-03-10","2021-03-10 02:00:00","0536197824",40);
+call Ingresar_visita(42,"2021-03-15","2021-03-15","2021-03-15 02:30:00","0941850327",23);
+call Ingresar_visita(43,"2021-03-30","2021-03-30","2021-03-30 02:45:11","0192437856",13);
+call Ingresar_visita(44,"2021-03-17","2021-03-17","2021-03-17 02:17:17","0412573869",2);
+call Ingresar_visita(45,"2021-04-12","2021-04-12","2021-04-12 03:20:17","0643701258",7);
+call Ingresar_visita(46,"2021-04-25","2021-04-25","2021-04-25 03:00:33","0924173695",10);
+call Ingresar_visita(47,"2021-04-13","2021-04-13","2021-04-13 03:55:42","0124768593",13);
+call Ingresar_visita(48,"2021-04-11","2021-04-11","2021-04-11 03:11:25","0256187439",17);
+call Ingresar_visita(49,"2021-05-27","2021-05-27","2021-05-27 03:45:00","0263859714",22);
+call Ingresar_visita(50,"2021-05-21","2021-05-21","2021-05-21 03:00:00","0867530149",1);
+call Ingresar_visita(51,"2021-06-13","2021-06-13","2021-06-13 00:43:21","0123780456",23);
 
 
 -- Tabla Consultor_externo
 
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-01-12 01:20:04","Apple",4,"0924173695");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-01-13 08:12:41","FedEX",7,"0875269130");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-01-22 01:50:44","Apple",6,"0924173695");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-02-02 00:25:32","Microsoft",15,"0215869743");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-02-22 00:26:34","Amazon",10,"0851347260");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-02-25 03:10:24","Apple",2,"0924173695");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-03-07 00:43:16","Facebook",8,"0921738605");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-03-12 00:45:02","Microsoft",7,"0215869743");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-03-28 05:17:37","Unilever",2,"0258716394");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-04-02 00:23:11","Unilever",5,"0258716394");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-04-10 00:55:34","Amazon",3,"0851347260");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-04-17 02:22:26","Microsoft",3,"0215869743");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-05-03 04:32:11","FedEX",5,"0875269130");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-05-17 00:23:26","Facebook",3,"0921738605");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-05-18 00:04:01","Facebook",1,"0921738605");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-06-23 01:37:31","Unilever",8,"0258716394");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-06-27 00:13:56","Facebook",2,"0921738605");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-07-10 02:15:24","Amazon",6,"0851347260");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-07-16 01:02:16","Microsoft",9,"0215869743");
-INSERT INTO Consultor_externo (tiempo_de_conexion,nombre_empresa,numero_de_reportes_solicitados,cedula_usuario) VALUES ("2021-07-23 02:16:31","FedEX",5,"0875269130");
-
+INSERT INTO Consultor_externo VALUES (1,"2021-01-12 01:20:04","Apple",4,"0924173695");
+INSERT INTO Consultor_externo VALUES (2,"2021-01-13 08:12:41","FedEX",7,"0875269130");
+INSERT INTO Consultor_externo VALUES (3,"2021-01-22 01:50:44","Apple",6,"0924173695");
+INSERT INTO Consultor_externo VALUES (4,"2021-02-02 00:25:32","Microsoft",15,"0215869743");
+INSERT INTO Consultor_externo VALUES (5,"2021-02-22 00:26:34","Amazon",10,"0851347260");
+INSERT INTO Consultor_externo VALUES (6,"2021-02-25 03:10:24","Apple",2,"0924173695");
+INSERT INTO Consultor_externo VALUES (7,"2021-03-07 00:43:16","Facebook",8,"0921738605");
+INSERT INTO Consultor_externo VALUES (8,"2021-03-12 00:45:02","Microsoft",7,"0215869743");
+INSERT INTO Consultor_externo VALUES (9,"2021-03-28 05:17:37","Unilever",2,"0258716394");
+INSERT INTO Consultor_externo VALUES (10,"2021-04-02 00:23:11","Unilever",5,"0258716394");
+INSERT INTO Consultor_externo VALUES (11,"2021-04-10 00:55:34","Amazon",3,"0851347260");
+INSERT INTO Consultor_externo VALUES (12,"2021-04-17 02:22:26","Microsoft",3,"0215869743");
+INSERT INTO Consultor_externo VALUES (13,"2021-05-03 04:32:11","FedEX",5,"0875269130");
+INSERT INTO Consultor_externo VALUES (14,"2021-05-17 00:23:26","Facebook",3,"0921738605");
+INSERT INTO Consultor_externo VALUES (15,"2021-05-18 00:04:01","Facebook",1,"0921738605");
+INSERT INTO Consultor_externo VALUES (16,"2021-06-23 01:37:31","Unilever",8,"0258716394");
+INSERT INTO Consultor_externo VALUES (17,"2021-06-27 00:13:56","Facebook",2,"0921738605");
+INSERT INTO Consultor_externo VALUES (18,"2021-07-10 02:15:24","Amazon",6,"0851347260");
+INSERT INTO Consultor_externo VALUES (19,"2021-07-16 01:02:16","Microsoft",9,"0215869743");
+INSERT INTO Consultor_externo VALUES (20,"2021-07-23 02:16:31","FedEX",5,"0875269130");
+call Ingresar_consultor_externo(22,"2021-01-13 00:45:26","Alibaba",6,"0536197824");
+call Ingresar_consultor_externo(23,"2021-01-27 00:13:47","Walmart",10,"0243791668");
+call Ingresar_consultor_externo(24,"2021-01-10 00:21:47","Bank of America",1,"0794536812");
+call Ingresar_consultor_externo(25,"2021-01-14 00:02:37","Pepsico",2,"0315829567");
+call Ingresar_consultor_externo(26,"2021-02-01 01:02:00","Samsung",12,"0759316824");
+call Ingresar_consultor_externo(27,"2021-02-23 01:33:24","Alphabet",7,"0256187439");
+call Ingresar_consultor_externo(28,"2021-02-12 01:45:56","Tencent",9,"0702118500");
+call Ingresar_consultor_externo(29,"2021-02-25 01:28:26","Alibaba",4,"0536197824");
+call Ingresar_consultor_externo(30,"2021-03-01 02:56:00","Walmart",5,"0243791668");
+call Ingresar_consultor_externo(31,"2021-03-11 02:31:17","Bank of America",6,"0794536812");
+call Ingresar_consultor_externo(32,"2021-03-18 02:17:37","Pepsico",7,"0315829567");
+call Ingresar_consultor_externo(33,"2021-03-28 02:56:00","Samsung",8,"0759316824");
+call Ingresar_consultor_externo(34,"2021-04-22 02:45:24","Alphabet",9,"0256187439");
+call Ingresar_consultor_externo(35,"2021-04-24 03:45:00","Tencent",10,"0702118500");
+call Ingresar_consultor_externo(36,"2021-05-13 03:00:00","Walmart",11,"0243791668");
+call Ingresar_consultor_externo(37,"2021-05-20 03:00:17","Bank of America",15,"0794536812");
+call Ingresar_consultor_externo(38,"2021-06-18 00:17:20","Pepsico",13,"0315829567");
+call Ingresar_consultor_externo(39,"2021-06-03 01:00:00","Samsung",4,"0759316824");
+call Ingresar_consultor_externo(40,"2021-07-02 00:05:06","Alphabet",6,"0256187439");
 
 
 
@@ -331,7 +389,25 @@ INSERT INTO Administrador (sueldo,horas_trabajadas,numero_de_reportes_generados,
 INSERT INTO Administrador (sueldo,horas_trabajadas,numero_de_reportes_generados,cedula_usuario) VALUES (4000.00,"2021-07-01 06:00:00",23,"0192437856");
 INSERT INTO Administrador (sueldo,horas_trabajadas,numero_de_reportes_generados,cedula_usuario) VALUES (3000.00,"2021-07-18 09:00:00",18,"0361407592");
 INSERT INTO Administrador (sueldo,horas_trabajadas,numero_de_reportes_generados,cedula_usuario) VALUES (2050.00,"2021-07-22 23:00:00",12,"0643701258");
-
+call Ingresar_administrador(1500.00,"2021-02-14 13:00:00",18,"0654817923");
+call Ingresar_administrador(2000.00,"2021-03-16 16:00:00",21,"0124768593");
+call Ingresar_administrador(2500.00,"2021-04-18 19:00:00",24,"0438715962");
+call Ingresar_administrador(3000.00,"2021-05-21 22:00:00",25,"0263859714");
+call Ingresar_administrador(3500.00,"2021-06-21 23:00:00",16,"0741852369");
+call Ingresar_administrador(4000.00,"2021-07-03 14:00:00",12,"0321467958");
+call Ingresar_administrador(4000.00,"2021-07-12 15:00:00",15,"0321467958");
+call Ingresar_administrador(3500.00,"2021-01-21 19:00:00",25,"0741852369");
+call Ingresar_administrador(3000.00,"2021-02-16 17:00:00",11,"0263859714");
+call Ingresar_administrador(2500.00,"2021-03-03 22:00:00",12,"0438715962");
+call Ingresar_administrador(2000.00,"2021-04-06 15:00:00",15,"0124768593");
+call Ingresar_administrador(1500.00,"2021-05-07 18:00:00",12,"0654817923");
+call Ingresar_administrador(3500.00,"2021-07-01 10:00:00",10,"0741852369");
+call Ingresar_administrador(2500.00,"2021-04-19 19:00:00",17,"0438715962");
+call Ingresar_administrador(4000.00,"2021-01-01 05:00:00",13,"0321467958");
+call Ingresar_administrador(3000.00,"2021-03-11 08:00:00",21,"0263859714");
+call Ingresar_administrador(2000.00,"2021-07-16 19:00:00",17,"0124768593");
+call Ingresar_administrador(1500.00,"2021-04-27 07:00:00",10,"0654817923");
+call Ingresar_administrador(2000.00,"2021-01-15 22:00:00",14,"0124768593");
 
 
 -- Tabla Cliente
@@ -356,7 +432,25 @@ INSERT INTO Cliente (tiempo_de_conexion,numero_de_reportes_solicitados,cedula_us
 INSERT INTO Cliente (tiempo_de_conexion,numero_de_reportes_solicitados,cedula_usuario)VALUES ("2021-07-12 01:15:20",10,"0941850327");
 INSERT INTO Cliente (tiempo_de_conexion,numero_de_reportes_solicitados,cedula_usuario)VALUES ("2021-07-19 00:56:20",4,"0983645712");
 INSERT INTO Cliente (tiempo_de_conexion,numero_de_reportes_solicitados,cedula_usuario)VALUES ("2021-07-30 01:20:10",9,"0568374219");
-
+call Ingresar_cliente("2021-02-06 00:08:00",5,"0346758912");
+call Ingresar_cliente("2021-03-09 00:10:00",6,"0841695723");
+call Ingresar_cliente("2021-04-15 00:33:00",7,"0637854912");
+call Ingresar_cliente("2021-05-18 00:45:00",8,"0684579123");
+call Ingresar_cliente("2021-06-20 01:13:00",9,"0789251346");
+call Ingresar_cliente("2021-07-25 02:00:34",10,"0789251346");
+call Ingresar_cliente("2021-01-14 00:26:00",1,"0534267891");
+call Ingresar_cliente("2021-07-23 00:55:00",2,"0346758912");
+call Ingresar_cliente("2021-04-26 01:22:22",3,"0841695723");
+call Ingresar_cliente("2021-05-12 02:11:10",4,"0637854912");
+call Ingresar_cliente("2021-06-11 04:00:09",5,"0684579123");
+call Ingresar_cliente("2021-01-02 03:01:44",11,"0789251346");
+call Ingresar_cliente("2021-07-22 02:00:52",9,"0841695723");
+call Ingresar_cliente("2021-01-11 01:55:22",8,"0346758912");
+call Ingresar_cliente("2021-02-16 00:01:07",6,"0684579123");
+call Ingresar_cliente("2021-02-23 02:05:56",3,"0684579123");
+call Ingresar_cliente("2021-03-15 00:21:26",10,"0637854912");
+call Ingresar_cliente("2021-05-23 00:11:00",8,"0346758912");
+call Ingresar_cliente("2021-07-06 00:17:10",4,"0637854912");
 
 
 -- Tabla Empleado_cargo
